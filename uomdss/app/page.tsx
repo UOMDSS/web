@@ -1,10 +1,10 @@
-import Navbar from "@/components/navbar";
+import Navigation from "@/components/navigation/navigation";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col max-w-full h-full px-24">
-      <Navbar />
-      <main className="flex min-h-screen min-w-screen flex-col items-left"></main>
+    <div className="relative flex flex-1 flex-col max-w-full min-h-screen px-8">
+      <Navigation />
+      <main className="flex min-h-screen min-w-screen container">Hello</main>
     </div>
   );
 }
