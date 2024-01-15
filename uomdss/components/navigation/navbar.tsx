@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "../button";
 import Logo from "../logo";
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion";
 import { NavAnimations } from "@/lib/animations";
 
 const fixedNavLinks = [
@@ -18,13 +18,13 @@ const fixedNavLinks = [
   },
 
   {
-    name: "Sponsors",
-    href: "#sponsors",
+    name: "Team",
+    href: "#team",
   },
 
   {
-    name: "Contact",
-    href: "#contact",
+    name: "Sponsors",
+    href: "#sponsors",
   },
 ];
 
@@ -63,30 +63,32 @@ const ScrollNavbar = () => {
   ];
 
   return (
-    <motion.header
-      key={"scrollNav"}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={NavAnimations}
-      className="fixed z-10 flex justify-between px-4 py-2 rounded-full left-1/2 top-10 bg-[rgba(60,6,79,0.36)] mix-blend-luminosity shadow-[0_0_6px_0_rgba(255,255,255,0.15)] backdrop-blur-[67.957px]"
-    >
-      <nav>
-        <ul className="flex items-center">
-          {scrollNavLinks.map((link) => (
-            <li key={link.name} className="px-2">
-              <Link href={link.href}>{link.name}</Link>
+    <LazyMotion features={domAnimation} strict>
+      <m.header
+        key={"scrollNav"}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={NavAnimations}
+        className="fixed z-10 flex justify-between px-4 py-2 rounded-full left-1/2 top-10 bg-[rgba(60,6,79,0.36)] mix-blend-luminosity shadow-[0_0_6px_0_rgba(255,255,255,0.15)] backdrop-blur-[67.957px]"
+      >
+        <nav>
+          <ul className="flex items-center">
+            {scrollNavLinks.map((link) => (
+              <li key={link.name} className="px-2">
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+            <li className="px-2">
+              <Button className="rounded-full" asChild>
+                {/* placeholder link */}
+                <Link href="https://discord.gg/2HfzJmK">Join Us</Link>
+              </Button>
             </li>
-          ))}
-          <li className="px-2">
-            <Button className="rounded-full" asChild>
-              {/* placeholder link */}
-              <Link href="https://discord.gg/2HfzJmK">Join Us</Link>
-            </Button>
-          </li>
-        </ul>
-      </nav>
-    </motion.header>
+          </ul>
+        </nav>
+      </m.header>
+    </LazyMotion>
   );
 };
 
