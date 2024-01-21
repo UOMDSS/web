@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Logo from "../logo";
-import { Discord, EnvelopeAt, Github, Instagram } from "react-bootstrap-icons";
+import { Discord, Github, Instagram, Linkedin } from "react-bootstrap-icons";
 
 const Footer = () => {
   return (
-    <footer className="flex border-t border-neutral-900 border-opacity-10">
+    <footer className="flex border-t border-gray-200">
       <div className="mx-auto w-full max-w-screen p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -12,8 +12,8 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1">
             <div>
-              <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-              <ul className="text-gray-800">
+              <h3 className="mb-4 text-lg font-bold">Contact Us</h3>
+              <ul className="text-gray-800 font-medium">
                 <li className="mb-1">
                   University of Manchester, Oxford Rd, Manchester M13 9PL
                 </li>
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-4 border-gray-200 sm:mx-auto lg:my-6" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-800 sm:text-center">
             © 2024{" "}
@@ -32,21 +32,41 @@ const Footer = () => {
               MUDS™
             </Link>
             . All Rights Reserved. Made with{" "}
-            <span className="text-red-500">❤</span> by{" "}
-            <Link href="https://github.com/druvdub" className="font-bold">
+            <span className="text-gray-500">🐞</span> by{" "}
+            <Link href="https://github.com/druvdub" className="font-semibold">
               ddos
             </Link>
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
-            <Link href="#" className="text-gray-800">
+            <Link
+              href="https://www.instagram.com/uomdss/"
+              target="_blank"
+              className="text-gray-800"
+            >
               <Instagram />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="#" className="text-gray-800">
+            <Link
+              href="https://discord.gg/XFtW8nsRgv"
+              target="_blank"
+              className="text-gray-800"
+            >
               <Discord />
               <span className="sr-only">Discord</span>
             </Link>
-            <Link href="#" className="text-gray-800">
+            <Link
+              href="https://www.linkedin.com/company/mudss-data-science-society/"
+              target="_blank"
+              className="text-gray-800"
+            >
+              <Linkedin />
+              <span className="sr-only">Linkedin</span>
+            </Link>
+            <Link
+              href="https://github.com/UOMDSS"
+              target="_blank"
+              className="text-gray-800"
+            >
               <Github />
               <span className="sr-only">Github</span>
             </Link>

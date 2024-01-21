@@ -37,7 +37,10 @@ const FixedNavbar = () => {
           {fixedNavLinks.map((link) => (
             <li key={link.name} className="px-2">
               <Button variant={"link"} asChild>
-                <Link href={link.href} className="font-medium text-[18px]">
+                <Link
+                  href={link.href}
+                  className="font-medium lg:text-[20px] md:text-[18px]"
+                >
                   {link.name}
                 </Link>
               </Button>
@@ -46,8 +49,7 @@ const FixedNavbar = () => {
         </ul>
       </nav>
       <Button className="rounded-full px-8" asChild>
-        {/* placeholder link */}
-        <Link href="https://discord.gg/2HfzJmK">Join Us</Link>
+        <Link href="https://discord.gg/XFtW8nsRgv">Join Us</Link>
       </Button>
     </header>
   );
