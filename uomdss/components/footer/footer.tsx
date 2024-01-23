@@ -74,7 +74,7 @@ const Footer = () => {
             <Link
               href="https://www.linkedin.com/company/mudss-data-science-society/"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#0a66c2]"
               title="Linkedin"
             >
               <Linkedin />
@@ -83,7 +83,7 @@ const Footer = () => {
             <Link
               href="https://github.com/UOMDSS"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#4078c0]"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110"
               title="Github"
             >
               <Github />
