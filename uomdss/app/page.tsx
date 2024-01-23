@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/footer";
-import Hero from "@/components/hero";
+import Hero from "@/components/sections/hero";
 import Navigation from "@/components/navigation/navigation";
+import Sponsor from "@/components/sections/sponsor";
 
 export default function Home() {
   return (
@@ -8,8 +9,7 @@ export default function Home() {
       <Navigation />
       <main className="flex flex-col min-h-screen min-w-screen container">
         <Hero />
-        <Hero />
-        <Hero />
+        <Sponsor />
       </main>
       <Footer />
     </div>

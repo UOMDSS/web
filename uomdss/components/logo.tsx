@@ -2,19 +2,15 @@ import Link from "next/link";
 
 // did not want to use svgr, annoyingly slow just to load an svg
 // feel free to change this to svgr if you want
-const Logo = ({ height = 36, color = "#3C064F" }) => {
-  const originalRatio = 637 / 281;
-  const width = height * originalRatio;
-
+const Logo = ({ color = "#3C064F", ...props }) => {
   return (
     <div className="flex items-center">
       <Link href={"/"}>
         <svg
-          width={width}
-          height={height}
           viewBox={`0 0 637 281`}
-          fill="none"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
+          {...props}
         >
           <circle cx="36.2103" cy="36.2103" r="36.2103" fill={color} />
           <circle cx="244.782" cy="36.2103" r="36.2103" fill={color} />

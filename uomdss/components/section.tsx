@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react";
 
 interface SectionProps extends HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const Section: React.FC<SectionProps> = ({ children, ...props }) => {
