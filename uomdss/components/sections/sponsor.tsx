@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Sponsor = () => {
   return (
-    <Section className="flex w-full min-h-screen items-center" id="sponsors">
+    <Section className="w-full min-h-[75vh] items-center mb-8" id="sponsors">
       <div className="mx-auto px-6 lg:px-8">
         <h2 className="text-center text-xl md:text-3xl font-semibold text-gray-900 uppercase">
           Our Sponsors
