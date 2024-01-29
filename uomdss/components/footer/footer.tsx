@@ -10,17 +10,15 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex border-t border-gray-200">
+    <footer className="flex border-t border-gray-200" id="contact">
       <div className="mx-auto w-full max-w-screen px-3 py-4 md:px-4 md:py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Logo color="#0f0f0f" className="w-auto h-[36px] md:h-[48px]" />
+            <Logo color="#0f0f0f" className="w-auto h-[32px] md:h-[36px]" />
           </div>
           <div className="grid grid-cols-1">
             <div>
-              <h3 className="mb-4 text-base md:text-lg font-bold">
-                Contact Us
-              </h3>
+              <h3 className="mb-4 text-sm md:text-lg font-bold">Contact Us</h3>
               <ul className="text-gray-800 font-medium text-xs text-wrap md:text-sm">
                 <li className="mb-1">
                   University of Manchester, Oxford Rd, Manchester M13 9PL
@@ -46,11 +44,7 @@ const Footer = () => {
             >
               MUDS™
             </Link>
-            . All Rights Reserved. Made with{" "}
-            <span className="text-gray-500">🐞</span> by{" "}
-            <Link href="https://github.com/druvdub" className="font-medium">
-              ddos
-            </Link>
+            . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
             <Link
