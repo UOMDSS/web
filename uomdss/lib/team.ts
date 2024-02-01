@@ -5,6 +5,8 @@ import spons from "../public/committee/spons.jpeg";
 import pr from "../public/committee/pr.jpeg";
 import events from "../public/committee/events.jpeg";
 import workshop from "../public/committee/workshop.jpg";
+import graphics from "../public/committee/graphics.png";
+import dev from "../public/committee/dev.png";
 import { StaticImageData } from "next/image";
 
 interface Person {
@@ -59,18 +61,18 @@ const people: Person[] = [
     image: workshop,
     linkedin: `${linkedinBaseUrl}labeebah-islaam/`,
   },
-  //   {
-  //     name: "Hanin Amri",
-  //     role: "Graphics Lead",
-  //     image: "",
-  //     linkedin: `${linkedinBaseUrl}haninsofia/`,
-  //   },
-  //   {
-  //     name: "Dhruv Sharma",
-  //     role: "Dev Lead",
-  //     image: "",
-  //     linkedin: `${linkedinBaseUrl}dsio/`,
-  //   },
+  {
+    name: "Hanin Amri",
+    role: "Graphics Lead",
+    image: graphics,
+    linkedin: `${linkedinBaseUrl}haninsofia/`,
+  },
+  {
+    name: "Dhruv Sharma",
+    role: "Dev Lead",
+    image: dev,
+    linkedin: `${linkedinBaseUrl}dsio/`,
+  },
 ];
 
 export { people as Committee };
