@@ -59,18 +59,18 @@ const people: Person[] = [
     image: workshop,
     linkedin: `${linkedinBaseUrl}labeebah-islaam/`,
   },
-  {
-    name: "Hanin Amri",
-    role: "Graphics Lead",
-    image: "",
-    linkedin: `${linkedinBaseUrl}haninsofia/`,
-  },
-  {
-    name: "Dhruv Sharma",
-    role: "Dev Lead",
-    image: "",
-    linkedin: `${linkedinBaseUrl}dsio/`,
-  },
+  //   {
+  //     name: "Hanin Amri",
+  //     role: "Graphics Lead",
+  //     image: "",
+  //     linkedin: `${linkedinBaseUrl}haninsofia/`,
+  //   },
+  //   {
+  //     name: "Dhruv Sharma",
+  //     role: "Dev Lead",
+  //     image: "",
+  //     linkedin: `${linkedinBaseUrl}dsio/`,
+  //   },
 ];
 
 export { people as Committee };

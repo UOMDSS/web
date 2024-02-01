@@ -6,9 +6,9 @@ import { Committee } from "@/lib/team";
 
 const Team = () => {
   return (
-    <Section className="flex w-full min-h-screen mb-8" id="team">
+    <Section className="w-full min-h-screen mb-8 px-0.5 md:p-0" id="team">
       <div className="mx-auto w-full px-6">
-        <h2 className="text-center text-xl md:text-3xl font-semibold text-gray-900 uppercase">
+        <h2 className="text-center md:text-3xl font-semibold text-gray-900 uppercase">
           Our Team
         </h2>
         <ul

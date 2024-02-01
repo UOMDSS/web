@@ -30,9 +30,9 @@ const Events = () => {
   };
 
   return (
-    <Section className="w-full h-auto min-h-[75vh] mb-8" id="events">
+    <Section className="w-full min-h-[75vh] mb-8 px-0.5 md:p-0" id="events">
       <div className="mx-auto px-0 md:px-6 lg:px-8">
-        <h2 className="text-center text-xl md:text-3xl font-semibold text-gray-900 uppercase">
+        <h2 className="text-center md:text-3xl font-semibold text-gray-900 uppercase">
           Events & Workshops
         </h2>
 

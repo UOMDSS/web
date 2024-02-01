@@ -8,9 +8,9 @@ import About from "@/components/sections/about";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-1 flex-col max-w-full min-h-screen px-8">
+    <div className="relative flex flex-1 flex-col max-w-full min-h-screen px-2 md:px-8">
       <Navigation />
-      <main className="flex flex-col min-h-screen min-w-screen container">
+      <main className="flex flex-col min-h-screen min-w-screen container px-1.5 md:px-2">
         <Hero />
         <About />
         <Events />

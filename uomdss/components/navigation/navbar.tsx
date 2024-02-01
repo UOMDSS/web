@@ -49,7 +49,9 @@ const FixedNavbar = () => {
         </ul>
       </nav>
       <Button className="rounded-full px-8" asChild>
-        <Link href="https://discord.gg/XFtW8nsRgv">Join Us</Link>
+        <Link href="https://discord.gg/XFtW8nsRgv" target="_blank">
+          Join Us
+        </Link>
       </Button>
     </header>
   );

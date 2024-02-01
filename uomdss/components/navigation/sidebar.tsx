@@ -8,6 +8,7 @@ import {
   MenuAnimations,
   ContainerAnimations,
 } from "@/lib/animations";
+import { Button } from "../button";
 
 const NavLinks = [
   {
@@ -47,7 +48,7 @@ const MobileNavLink = ({
   return (
     <m.div
       variants={MobileNavLinkAnimations}
-      className="text-2xl font-medium text-white hover:text-[#e1306c]"
+      className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer"
     >
       <Link href={href} onClick={toggle}>
         {name}
@@ -102,6 +103,23 @@ const Sidebar = () => {
                     </div>
                   );
                 })}
+
+                <div className="overflow-hidden">
+                  <m.div variants={MobileNavLinkAnimations}>
+                    <Button
+                      className="rounded-full px-8 bg-white text-black hover:bg-white/60"
+                      asChild
+                    >
+                      <Link
+                        href="https://discord.gg/XFtW8nsRgv"
+                        target="_blank"
+                        className="text-2xl font-medium cursor-pointer"
+                      >
+                        Join Us
+                      </Link>
+                    </Button>
+                  </m.div>
+                </div>
               </m.div>
             </div>
           </m.div>

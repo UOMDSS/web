@@ -7,9 +7,12 @@ import Link from "next/link";
 
 const Sponsor = () => {
   return (
-    <Section className="w-full min-h-[75vh] items-center mb-8" id="sponsors">
+    <Section
+      className="w-full min-h-[75vh] items-center mb-8 px-0.5 md:p-0"
+      id="sponsors"
+    >
       <div className="mx-auto px-6 lg:px-8">
-        <h2 className="text-center text-xl md:text-3xl font-semibold text-gray-900 uppercase">
+        <h2 className="text-center md:text-3xl font-semibold text-gray-900 uppercase">
           Our Sponsors
         </h2>
         <div className="mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 items-center justify-items-center">
