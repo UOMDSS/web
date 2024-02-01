@@ -61,7 +61,7 @@ const Sidebar = () => {
   const toggleMenu = () => setOpen(!open);
 
   return (
-    <header className="z-10 justify-between w-full flex lg:hidden items-center sticky top-0 bg-white pt-6">
+    <header className="z-10 justify-between w-full flex lg:hidden items-center sticky top-0 bg-white py-4">
       <Logo color="#0f0f0f" className="w-auto h-[32px] md:h-[36px]" />
       <nav className="px-2">
         <div className="cursor-pointer" onClick={toggleMenu}>

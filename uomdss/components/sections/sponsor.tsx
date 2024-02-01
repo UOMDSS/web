@@ -18,6 +18,7 @@ const Sponsor = () => {
               src={Datern}
               alt="Datern"
               className="transition ease-in-out delay-100 duration-250 p-1 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 aspect-square"
+              priority
             />
           </Link>
           <Link href={"https://peak.ai"} passHref={true} target="_blank">
@@ -25,6 +26,7 @@ const Sponsor = () => {
               src={Peak}
               alt="Peak"
               className="transition ease-in-out delay-100 duration-250 p-1 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 aspect-square"
+              priority
             />
           </Link>
           <Link href={"https://wandb.ai/site"} passHref={true} target="_blank">
@@ -32,6 +34,7 @@ const Sponsor = () => {
               src={WB}
               alt="WB"
               className="transition ease-in-out delay-100 duration-250 p-1 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 aspect-square"
+              priority
             />
           </Link>
         </div>
