@@ -1,5 +1,4 @@
 import Section from "../section";
-import colors from "@/lib/colors";
 
 const Hero = () => {
   return (
