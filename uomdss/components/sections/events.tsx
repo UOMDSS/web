@@ -30,8 +30,8 @@ const Events = () => {
   };
 
   return (
-    <Section className="w-full min-h-[75vh] mb-8 px-0.5 md:p-0" id="events">
-      <div className="mx-auto px-0 md:px-6 lg:px-8">
+    <Section className="w-full min-h-[75vh] mb-8 px-2 md:px-0" id="events">
+      <div className="mx-auto px-8">
         <h2 className="text-center md:text-3xl font-semibold text-gray-900 uppercase">
           Events & Workshops
         </h2>
@@ -56,22 +56,22 @@ const Events = () => {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="flex p-0 md:p-1 w-full min-h-full">
                     <Card className="flex flex-col p-1 md:p-3 justify-between basis-full aspect-auto md:aspect-square">
-                      <CardHeader>
+                      <CardHeader className="items-start">
                         <CardTitle className="text-xl md:text-2xl lg:text-3xl">
                           {event.title}
                         </CardTitle>
-                        <CardDescription>
-                          <Badge
-                            className={`rounded-lg text-xs md:text-sm text-white uppercase ${setEventType(
-                              event.type
-                            )}`}
-                          >
-                            {event.type}
-                          </Badge>
+                        <CardDescription className="text-gray-900 text-sm md:text-base">
+                          {event.location}
                         </CardDescription>
+                        <Badge
+                          className={`rounded-lg text-xs md:text-sm text-white uppercase ${setEventType(
+                            event.type
+                          )}`}
+                        >
+                          {event.type}
+                        </Badge>
                       </CardHeader>
-
-                      <CardContent className="flex text-wrap">
+                      <CardContent className="flex flex-col text-wrap">
                         <p className="text-gray-900 font-medium text-xs md:text-base">
                           {event.description}
                         </p>
