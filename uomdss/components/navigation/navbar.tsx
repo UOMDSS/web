@@ -31,7 +31,10 @@ const fixedNavLinks = [
 const FixedNavbar = () => {
   return (
     <header className="z-10 justify-between w-full md:px-4 md:py-2 md:top-2 hidden lg:flex">
-      <Logo color="#0f0f0f" className="w-auto h-[36px] lg:h-[40px]" />
+      <Logo
+        color="transparent"
+        className="w-auto h-[36px] lg:h-[40px] bg-clip-content fill-transparent bg-supergradient bg-[length:200%_auto] animate-gradient"
+      />
       <nav>
         <ul className="flex items-center">
           {fixedNavLinks.map((link) => (
