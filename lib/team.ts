@@ -1,12 +1,12 @@
-import president from "../public/committee/prez.jpeg";
-import vp from "../public/committee/vp.jpg";
+import president from "../public/committee/president.jpg";
+import vice from "../public/committee/vice.jpg";
 import treasurer from "../public/committee/treasurer.jpg";
-import spons from "../public/committee/spons.jpeg";
-import pr from "../public/committee/pr.jpeg";
-import events from "../public/committee/events.jpeg";
-import workshop from "../public/committee/workshop.jpg";
-import graphics from "../public/committee/graphics.png";
-import dev from "../public/committee/dev.png";
+import inclusion from "../public/committee/inclusion.jpg";
+import pr from "../public/committee/pr.jpg";
+import events from "../public/committee/events.jpg";
+import hackathon from "../public/committee/hackathon.jpg";
+import marketing from "../public/committee/marketing.jpg";
+import dev from "../public/committee/dev.jpg";
 import { StaticImageData } from "next/image";
 
 interface Person {
@@ -20,58 +20,58 @@ const linkedinBaseUrl = "https://www.linkedin.com/in/";
 
 const people: Person[] = [
   {
-    name: "Saurav Maheshkar",
+    name: "Alexandru Buburuzan",
     role: "President",
     image: president,
-    linkedin: `${linkedinBaseUrl}sauravmaheshkar/`,
+    linkedin: `${linkedinBaseUrl}alexbubu/`,
   },
   {
-    name: "Mohammad Altaisan",
+    name: "Aylin Demirdaș",
     role: "Vice President",
-    image: vp,
-    linkedin: `${linkedinBaseUrl}mohammad-a-049284268/`,
+    image: vice,
+    linkedin: `${linkedinBaseUrl}aylindemirdas/`,
   },
   {
-    name: "Satwik Goyal",
+    name: "Saeyoung Her",
     role: "Treasurer",
     image: treasurer,
-    linkedin: `${linkedinBaseUrl}satwik-goyal/`,
+    linkedin: `${linkedinBaseUrl}saeyoungher/`,
   },
   {
-    name: "Samarth Jain",
-    role: "Sponsorship Lead",
-    image: spons,
-    linkedin: `${linkedinBaseUrl}yashikagandhi2023/`,
+    name: "Manoj Manikandan",
+    role: "Inclusion Officer",
+    image: inclusion,
+    linkedin: `${linkedinBaseUrl}manojmanikandan/`,
   },
   {
-    name: "Yashika Gandhi",
+    name: "Tengku Iman",
     role: "Public Relations Lead",
     image: pr,
-    linkedin: `${linkedinBaseUrl}`,
+    linkedin: `${linkedinBaseUrl}tengku-dzariff-iman-0ba39b2ab/`,
   },
   {
-    name: "Mohd Monish Rainy",
+    name: "Hamza Khan",
     role: "Events Lead",
     image: events,
-    linkedin: `${linkedinBaseUrl}mohd-monish-rainy/`,
+    linkedin: `${linkedinBaseUrl}hamzakhan47/`,
   },
   {
-    name: "Labeebah Islaam",
-    role: "Workshops Lead",
-    image: workshop,
-    linkedin: `${linkedinBaseUrl}labeebah-islaam/`,
+    name: "Moeed Chughtai",
+    role: "Hackathon Lead",
+    image: hackathon,
+    linkedin: `${linkedinBaseUrl}moeed-chughtai/`,
   },
   {
-    name: "Hanin Amri",
-    role: "Graphics Lead",
-    image: graphics,
-    linkedin: `${linkedinBaseUrl}haninsofia/`,
+    name: "Muhammad Kalmani",
+    role: "Marketing Lead",
+    image: marketing,
+    linkedin: `${linkedinBaseUrl}muhammadkalmani/`,
   },
   {
-    name: "Dhruv Sharma",
+    name: "Taha Ejaz",
     role: "Dev Lead",
     image: dev,
-    linkedin: `${linkedinBaseUrl}dsio/`,
+    linkedin: `${linkedinBaseUrl}tahaejaz1/`,
   },
 ];
 
