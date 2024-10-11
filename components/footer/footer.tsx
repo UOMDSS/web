@@ -38,7 +38,7 @@ const Footer = () => {
           <span className="text-xs md:text-sm text-gray-800 sm:text-center text-wrap">
             © 2024{" "}
             <Link
-              href="https:uomdss.co.uk"
+              href="https://uomds.co.uk"
               className="hover:text-[#3C064F] font-semibold"
               title="MUDS"
             >
