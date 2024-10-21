@@ -4,17 +4,24 @@ interface Event {
   date: string;
   location?: string;
   type: string;
+  registrationLink: string
 }
 
 const UpcomingEvents: Event[] = [
-  // {
-  //   title: "Event 1",
-  //   description:
-  //     "This is a description of event 1. Longer description to test the layout.",
-  //   date: "1st February 2024",
-  //   location: "University of Manchester",
-  //   type: "workshop",
-  // },
+  {
+    title: "Intro to Machine Learning",
+    description: 
+      `Join the Data Science Society (MUDS) for an introductory workshop 
+      on key Machine Learning concepts like supervised and unsupervised 
+      learning, linear and logistic regression. Perfect for beginners, it 
+      includes hands-on practice with Python and NumPy for binary 
+      classification. Meet the new MUDS committee, connect with fellow 
+      students, and enjoy snacks and giveaways!`,
+    registrationLink: "https://forms.gle/5KJEwvJFKiWeJ2KK6",
+    date: "23rd October 2024",
+    location: "Mansfield Cooper Building, Room G.22",
+    type: "workshop",
+  },
   // {
   //   title: "Event 2",
   //   description: "This is a description of event 2",

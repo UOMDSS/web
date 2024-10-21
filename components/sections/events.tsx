@@ -75,6 +75,18 @@ const Events = () => {
                         <p className="text-gray-900 font-medium text-xs md:text-base">
                           {event.description}
                         </p>
+                        {event.registrationLink && (
+                          <p className="mt-2 text-xs md:text-base">
+                            <a
+                              href={event.registrationLink}
+                              className="text-blue-600 hover:underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Register for the event here!
+                            </a>
+                          </p>
+                        )}
                       </CardContent>
                       <CardFooter className="flex text-wrap">
                         <p className="text-gray-900 font-medium text-xs md:text-sm">
