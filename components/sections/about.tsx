@@ -12,19 +12,12 @@ const About = () => {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           <p className=" text-sm lg:text-2xl">
-            Here at UOMDSS, we help students in Manchester build skills in data
-            science and obtain internships and careers through workshops,
-            hackathons and careers events. We adamantly believe that data is the
-            future, whether that be its analysis or the communication of its
-            results.
+          
+          Founded in 2020 at The University of Manchester, MUDS is dedicated to developing the next generation of Data Science and Machine Learning specialists. We bridge academia and industry through workshops that introduce foundational concepts with real-world applications across sectors like automotive and healthcare. Our Spotlight events spark curiosity, giving postgraduate students a platform to share research and inspire others in Machine Learning. We believe data is the future, in both its analysis and communication.
+          <br />
+          <br />
+          Building on our STEM strengths, we help students enhance their skills and prepare for industry, growing a community of skilled young data scientists at Manchester.
             {/* line break and newline*/}
-            <br />
-            <br />
-            We build on the strength of our STEM faculties by providing students
-            interested in data science the opportunity to further their data
-            science capabilities and prepare themselves for careers in industry,
-            ultimately growing our community of skilled young data scientists at
-            the University of Manchester.
           </p>
           {/* add shadow around card */}
           <Card className="flex items-center justify-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]">

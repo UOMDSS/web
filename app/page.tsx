@@ -15,7 +15,6 @@ export default function Home() {
         <About />
         <Events />
         <Team />
-        <Sponsor />
       </main>
       <Footer />
     </div>
