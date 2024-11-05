@@ -13,7 +13,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           <p className=" text-sm lg:text-2xl">
           
-          Founded in 2020 at The University of Manchester, MUDS is dedicated to developing the next generation of Data Science and Machine Learning specialists. We bridge academia and industry through workshops that introduce foundational concepts with real-world applications across sectors like automotive and healthcare. Our Spotlight events spark curiosity, giving postgraduate students a platform to share research and inspire others in Machine Learning. We believe data is the future, in both its analysis and communication.
+          Founded in 2020 at The University of Manchester, MUDS is dedicated to cultivating the next generation of Data Science and Machine Learning specialists. We bridge academia and industry through workshops that introduce foundational concepts with real-world applications across sectors like automotive and healthcare. Our Spotlight events spark curiosity, giving postgraduate students a platform to share research and inspire others in Machine Learning. We believe data is the future, in both its analysis and communication.
           <br />
           <br />
           Building on our STEM strengths, we help students enhance their skills and prepare for industry, growing a community of skilled young data scientists at Manchester.
