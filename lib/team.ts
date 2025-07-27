@@ -1,12 +1,13 @@
 import president from "../public/committee/president.jpg";
 import vice from "../public/committee/vice.jpg";
 import treasurer from "../public/committee/treasurer.jpg";
+import workshop from "../public/committee/workshop.jpg";
+import operation from "../public/committee/operation.jpg";
 import inclusion from "../public/committee/inclusion.jpg";
-import pr from "../public/committee/pr.jpg";
-import events from "../public/committee/events.jpg";
-import hackathon from "../public/committee/hackathon.jpg";
+import social from "../public/committee/social.jpg";
 import marketing from "../public/committee/marketing.jpg";
-import dev from "../public/committee/dev.jpg";
+import graphic from "../public/committee/graphic.jpg";
+import photo from "../public/committee/photo.jpg";
 import { StaticImageData } from "next/image";
 
 interface Person {
@@ -20,58 +21,64 @@ const linkedinBaseUrl = "https://www.linkedin.com/in/";
 
 const people: Person[] = [
   {
-    name: "Alexandru Buburuzan",
+    name: "Waverli Leung",
     role: "President",
     image: president,
-    linkedin: `${linkedinBaseUrl}alexbubu/`,
+    linkedin: `${linkedinBaseUrl}waverli-leung/`,
   },
   {
-    name: "Aylin Demirdaș",
+    name: "Nicole Fernandes",
     role: "Vice President",
     image: vice,
-    linkedin: `${linkedinBaseUrl}aylindemirdas/`,
+    linkedin: `${linkedinBaseUrl}nicole-fernandes-uk/`,
   },
   {
-    name: "Saeyoung Her",
+    name: "xxx",
     role: "Treasurer",
     image: treasurer,
     linkedin: `${linkedinBaseUrl}saeyoungher/`,
   },
   {
-    name: "Manoj Manikandan",
-    role: "Inclusion Officer",
-    image: inclusion,
-    linkedin: `${linkedinBaseUrl}manojmanikandan/`,
+    name: "Ben Zan",
+    role: "Workshop Lead",
+    image: workshop,
+    linkedin: `${linkedinBaseUrl}benjamin-zan/`,
   },
   {
-    name: "Tengku Iman",
-    role: "Public Relations Lead",
-    image: pr,
+    name: "xxx",
+    role: "Operation Lead",
+    image: operation,
     linkedin: `${linkedinBaseUrl}tengku-dzariff-iman-0ba39b2ab/`,
   },
   {
-    name: "Hamza Khan",
-    role: "Events Lead",
-    image: events,
+    name: "Constanza Hay",
+    role: "Social Media Lead",
+    image: social,
+    linkedin: `${linkedinBaseUrl}constanza-soto-hay/`,
+  },
+  {
+    name: "Darwin Zhu",
+    role: "Marketing Lead",
+    image: marketing,
+    linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
+  },
+  {
+    name: "xxx",
+    role: "Graphic Lead",
+    image: graphic,
+    linkedin: `${linkedinBaseUrl}tahaejaz1/`,
+  },
+  {
+    name: "xxx",
+    role: "Inclusion Officer",
+    image: inclusion,
     linkedin: `${linkedinBaseUrl}hamzakhan47/`,
   },
   {
-    name: "Moeed Chughtai",
-    role: "Hackathon Lead",
-    image: hackathon,
-    linkedin: `${linkedinBaseUrl}moeed-chughtai/`,
-  },
-  {
-    name: "Muhammad Kalmani",
-    role: "Marketing Lead",
-    image: marketing,
-    linkedin: `${linkedinBaseUrl}muhammadkalmani/`,
-  },
-  {
-    name: "Taha Ejaz",
-    role: "Dev Lead",
-    image: dev,
-    linkedin: `${linkedinBaseUrl}tahaejaz1/`,
+    name: "Sean Lin",
+    role: "Photographer Lead",
+    image: photo,
+    linkedin: `${linkedinBaseUrl}haol-co/`,
   },
 ];
 
