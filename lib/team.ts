@@ -51,16 +51,16 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}tengku-dzariff-iman-0ba39b2ab/`,
   },
   {
-    name: "Constanza Hay",
+    name: "xxx",
     role: "Social Media Lead",
     image: social,
-    linkedin: `${linkedinBaseUrl}constanza-soto-hay/`,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
-    name: "Darwin Zhu",
+    name: "xxx",
     role: "Marketing Lead",
     image: marketing,
-    linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
@@ -75,10 +75,10 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}hamzakhan47/`,
   },
   {
-    name: "Sean Lin",
+    name: "xxx",
     role: "Photographer Lead",
     image: photo,
-    linkedin: `${linkedinBaseUrl}haol-co/`,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
 ];
 

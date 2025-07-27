@@ -24,9 +24,9 @@ const Footer = () => {
                   University of Manchester, Oxford Rd, Manchester M13 9PL
                 </li>
                 <li className="mb-1">
-                  <Link href="mailto:uomdss@gmail.com">
+                  <Link href="mailto:mdsaisoc@gmail.com">
                     <EnvelopeFill className="inline-block mr-1" />
-                    uomdss@gmail.com
+                    mdsaisoc@gmail.com
                   </Link>
                 </li>
               </ul>
@@ -40,7 +40,7 @@ const Footer = () => {
             <Link
               href="https://uomds.co.uk"
               className="hover:text-[#3C064F] font-semibold"
-              title="MUDS"
+              title="MUDS_AI"
             >
               MUDS™
             </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
             <Link
-              href="https://www.instagram.com/uomdss/"
+              href="https://www.instagram.com/muds_ai/?hl=en-gb"
               target="_blank"
               className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#e1306c]"
               title="Instagram"
