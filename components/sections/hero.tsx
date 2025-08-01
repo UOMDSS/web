@@ -8,7 +8,7 @@ const Hero = () => {
           THE University of Manchester
         </h4>
         <h1 className="text-sm-xl md:text-md-xl lg:text-lg-xl xl:text-xl-xl font-black max-w-prose flex-wrap text-wrap pt-1 pb-20 bg-clip-text text-transparent bg-supergradient bg-[length:200%_auto] animate-gradient cursor-default">
-          Data Science and AI Society
+          Data Science and AI Society (muds_ai)
         </h1>
       </div>
     </Section>

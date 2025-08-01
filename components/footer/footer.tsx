@@ -6,6 +6,8 @@ import {
   Github,
   Instagram,
   Linkedin,
+  Tiktok, 
+  Youtube
 } from "react-bootstrap-icons";
 
 const Footer = () => {
@@ -34,58 +36,68 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-4 border-gray-200 sm:mx-auto lg:my-6" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-xs md:text-sm text-gray-800 sm:text-center text-wrap">
-            © 2024{" "}
-            <Link
-              href="https://uomds.co.uk"
-              className="hover:text-[#3C064F] font-semibold"
-              title="MUDS_AI"
-            >
-              MUDS™
-            </Link>
-            . All Rights Reserved.
-          </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
+        <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
             <Link
               href="https://www.instagram.com/muds_ai/?hl=en-gb"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#e1306c]"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#E1306C]"
               title="Instagram"
             >
               <Instagram />
               <span className="sr-only">Instagram</span>
             </Link>
+
             <Link
-              href="https://discord.gg/XFtW8nsRgv"
+              href="https://discord.gg/p4FYacHYDF"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#7289da]"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#5865F2]"
               title="Discord"
             >
               <Discord />
               <span className="sr-only">Discord</span>
             </Link>
+
             <Link
-              href="https://www.linkedin.com/company/mudss-data-science-society/"
+              href="https://www.linkedin.com/company/mudsai/"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#0a66c2]"
-              title="Linkedin"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#0A66C2]"
+              title="LinkedIn"
             >
               <Linkedin />
-              <span className="sr-only">Linkedin</span>
+              <span className="sr-only">LinkedIn</span>
             </Link>
+
             <Link
               href="https://github.com/UOMDSS"
               target="_blank"
-              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110"
-              title="Github"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#181717]"
+              title="GitHub"
             >
               <Github />
-              <span className="sr-only">Github</span>
+              <span className="sr-only">GitHub</span>
+            </Link>
+
+            <Link
+              href="https://www.tiktok.com/@muds_ai?_t=ZN-8yVy5HvjV5S&_r=1"
+              target="_blank"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#010101]"
+              title="TikTok"
+            >
+              <Tiktok />
+              <span className="sr-only">TikTok</span>
+            </Link>
+
+            <Link
+              href="https://www.youtube.com/@muds_ai"
+              target="_blank"
+              className="text-gray-800 transition ease-in-out delay-100 duration-200 hover:-translate-y-1 hover:scale-110 hover:text-[#FF0000]"
+              title="YouTube"
+            >
+              <Youtube />
+              <span className="sr-only">YouTube</span>
             </Link>
           </div>
         </div>
-      </div>
     </footer>
   );
 };
