@@ -39,10 +39,10 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}benjamin-zan/`,
   },
   {
-    name: "xxx",
-    role: "Head of Workshops",
+    name: "Sean Lin",
+    role: "Workshops Lead",
     image: workshops,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    linkedin: `${linkedinBaseUrl}haol-co/`,
   },
   {
     name: "xxx",
