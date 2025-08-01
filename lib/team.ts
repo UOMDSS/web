@@ -1,13 +1,13 @@
 import president from "../public/committee/president.jpg";
 import vice from "../public/committee/vice.jpg";
 import treasurer from "../public/committee/treasurer.jpg";
-import workshop from "../public/committee/workshop.jpg";
-import operation from "../public/committee/operation.jpg";
-import inclusion from "../public/committee/inclusion.jpg";
 import social from "../public/committee/social.jpg";
 import marketing from "../public/committee/marketing.jpg";
 import graphic from "../public/committee/graphic.jpg";
-import photo from "../public/committee/photo.jpg";
+import video from "../public/committee/video.jpg";
+import content from "../public/committee/content.jpg";
+import workshops from "../public/committee/workshops.jpg";
+import events from "../public/committee/events.jpg";
 import { StaticImageData } from "next/image";
 
 interface Person {
@@ -28,27 +28,33 @@ const people: Person[] = [
   },
   {
     name: "Nicole Fernandes",
-    role: "Vice President",
+    role: "Vice President & Inclusion Officer",
     image: vice,
     linkedin: `${linkedinBaseUrl}nicole-fernandes-uk/`,
   },
   {
-    name: "xxx",
-    role: "Treasurer",
-    image: treasurer,
-    linkedin: `${linkedinBaseUrl}saeyoungher/`,
-  },
-  {
     name: "Ben Zan",
-    role: "Workshop Lead",
-    image: workshop,
+    role: "Treasurer & Podcast Host",
+    image: treasurer,
     linkedin: `${linkedinBaseUrl}benjamin-zan/`,
   },
   {
     name: "xxx",
-    role: "Operation Lead",
-    image: operation,
-    linkedin: `${linkedinBaseUrl}tengku-dzariff-iman-0ba39b2ab/`,
+    role: "Head of Workshops",
+    image: workshops,
+    linkedin: `${linkedinBaseUrl}xxx/`,
+  },
+  {
+    name: "xxx",
+    role: "Head of Events",
+    image: events,
+    linkedin: `${linkedinBaseUrl}xxx/`,
+  },
+  {
+    name: "xxx",
+    role: "Marketing & Strategy Lead",
+    image: marketing,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
@@ -58,26 +64,20 @@ const people: Person[] = [
   },
   {
     name: "xxx",
-    role: "Marketing Lead",
-    image: marketing,
+    role: "Content Creator",
+    image: content,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
-    role: "Graphic Lead",
+    role: "Graphic Designer",
     image: graphic,
-    linkedin: `${linkedinBaseUrl}tahaejaz1/`,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
-    role: "Inclusion Officer",
-    image: inclusion,
-    linkedin: `${linkedinBaseUrl}hamzakhan47/`,
-  },
-  {
-    name: "xxx",
-    role: "Photographer Lead",
-    image: photo,
+    role: "Video Editor",
+    image: video,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
 ];
