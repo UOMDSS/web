@@ -37,6 +37,9 @@ const Team = () => {
                   <p className="text-xs md:text-sm text-gray-500">
                     {person.role}
                   </p>
+                  <p className="text-xs md:text-sm text-gray-400">
+                    {person.degree}
+                  </p>
                   <Link href={person.linkedin} target="_blank">
                     <Linkedin className="mt-2 text-gray-500 cursor-pointer hover:text-[#0077B5] transition-colors duration-300 ease-in-out" />
                   </Link>

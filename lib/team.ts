@@ -57,11 +57,11 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}prescod/`,
   },
   {
-    name: "xxx",
+    name: "Darwin Zhu",
     role: "Marketing & Strategy Lead",
-    degree: "xxx",
+    degree: "2nd Yr Actuarial Science & Maths",
     image: marketing,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
   },
   {
     name: "xxx",
