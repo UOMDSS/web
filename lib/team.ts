@@ -15,6 +15,7 @@ interface Person {
   role: string;
   image: StaticImageData | string;
   linkedin: string;
+  degree: string;
 }
 
 const linkedinBaseUrl = "https://www.linkedin.com/in/";
@@ -23,60 +24,70 @@ const people: Person[] = [
   {
     name: "Waverli Leung",
     role: "President",
+    degree: "2nd Yr CS & Maths",
     image: president,
     linkedin: `${linkedinBaseUrl}waverli-leung/`,
   },
   {
     name: "Nicole Fernandes",
     role: "Vice President & Inclusion Officer",
+    degree: "3rd Yr CS & Maths",
     image: vice,
     linkedin: `${linkedinBaseUrl}nicole-fernandes-uk/`,
   },
   {
     name: "Ben Zan",
     role: "Treasurer & Podcast Host",
+    degree: "2nd Yr CS & Maths",
     image: treasurer,
     linkedin: `${linkedinBaseUrl}benjamin-zan/`,
   },
   {
     name: "Sean Lin",
     role: "Workshops Lead",
+    degree: "2nd Yr CS & Maths",
     image: workshops,
     linkedin: `${linkedinBaseUrl}haol-co/`,
   },
   {
     name: "Peter Prescod",
     role: "Head of Events",
+    degree: "2nd Yr CS & Maths",
     image: events,
     linkedin: `${linkedinBaseUrl}prescod/`,
   },
   {
     name: "xxx",
     role: "Marketing & Strategy Lead",
+    degree: "xxx",
     image: marketing,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
     role: "Social Media Lead",
+    degree: "xxx",
     image: social,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
     role: "Content Creator",
+    degree: "xxx",
     image: content,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
     role: "Graphic Designer",
+    degree: "xxx",
     image: graphic,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
     role: "Video Editor",
+    degree: "xxx",
     image: video,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
