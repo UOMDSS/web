@@ -58,7 +58,7 @@ const people: Person[] = [
   },
   {
     name: "Darwin Zhu",
-    role: "Marketing & Strategy Lead",
+    role: "Head of Strategy & Risk",
     degree: "2nd Yr Actuarial Science & Maths",
     image: marketing,
     linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
