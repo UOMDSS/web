@@ -64,11 +64,11 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
   },
   {
-    name: "xxx",
-    role: "Social Media Lead",
-    degree: "xxx",
+    name: "Yichen Liu",
+    role: "Digital Marketing Lead",
+    degree: "3rd Yr Criminology & Data Analytics",
     image: social,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    linkedin: `${linkedinBaseUrl}yichensusyliu/`,
   },
   {
     name: "xxx",
