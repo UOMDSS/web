@@ -3,11 +3,14 @@ import vice from "../public/committee/vice.jpg";
 import treasurer from "../public/committee/treasurer.jpg";
 import social from "../public/committee/social.jpg";
 import marketing from "../public/committee/marketing.jpg";
-import graphic from "../public/committee/graphic.jpg";
+import graphic1 from "../public/committee/graphic1.jpg";
+import graphic2 from "../public/committee/graphic2.jpg";
 import video from "../public/committee/video.jpg";
 import content from "../public/committee/content.jpg";
-import workshops from "../public/committee/workshops.jpg";
-import events from "../public/committee/events.jpg";
+import workshops1 from "../public/committee/workshops1.jpg";
+import workshops2 from "../public/committee/workshops2.jpg";
+import events1 from "../public/committee/events.jpg";
+import events2 from "../public/committee/events2.jpg";
 import { StaticImageData } from "next/image";
 
 interface Person {
@@ -46,15 +49,29 @@ const people: Person[] = [
     name: "Sean Lin",
     role: "Workshops Lead",
     degree: "2nd Yr CS & Maths",
-    image: workshops,
+    image: workshops1,
     linkedin: `${linkedinBaseUrl}haol-co/`,
+  },
+  {
+    name: "xxx",
+    role: "Workshops Officer",
+    degree: "xxx",
+    image: workshops2,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "Peter Prescod",
     role: "Head of Events",
     degree: "2nd Yr CS & Maths",
-    image: events,
+    image: events1,
     linkedin: `${linkedinBaseUrl}prescod/`,
+  },
+  {
+    name: "xxx",
+    role: "Events Officer",
+    degree: "xxx",
+    image: events2,
+    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "Darwin Zhu",
@@ -78,16 +95,23 @@ const people: Person[] = [
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
-    name: "xxx",
-    role: "Graphic Designer",
-    degree: "xxx",
-    image: graphic,
+    name: "Ayesha Khan",
+    role: "Graphic Lead",
+    degree: "2nd Yr Psycology",
+    image: graphic1,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "xxx",
-    role: "Video Editor",
+    role: "Graphic Designer",
     degree: "xxx",
+    image: graphic2,
+    linkedin: `${linkedinBaseUrl}xxx/`,
+  },
+  {
+    name: "Taran Patel",
+    role: "Video Editor",
+    degree: "3rd Yr CS",
     image: video,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
