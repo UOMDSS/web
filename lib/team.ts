@@ -1,19 +1,21 @@
+// team.ts (data only)
 import president from "../public/committee/president.jpg";
 import vice from "../public/committee/vice.jpg";
 import treasurer from "../public/committee/treasurer.jpg";
 import social from "../public/committee/social.jpg";
 import marketing from "../public/committee/marketing.jpg";
 import graphic1 from "../public/committee/graphic1.jpg";
-import graphic2 from "../public/committee/graphic2.jpg";
+
 import video from "../public/committee/video.jpg";
 import content from "../public/committee/content.jpg";
 import workshops1 from "../public/committee/workshops1.jpg";
 import workshops2 from "../public/committee/workshops2.jpg";
 import events1 from "../public/committee/events.jpg";
 import events2 from "../public/committee/events2.jpg";
+import bnyMellonLogo from "../public/sponsors/bny-mellon.png"; // <-- sponsor logo
 import { StaticImageData } from "next/image";
 
-interface Person {
+export interface Person {
   name: string;
   role: string;
   image: StaticImageData | string;
@@ -21,57 +23,36 @@ interface Person {
   degree: string;
 }
 
+export interface Sponsor {
+  name: string;
+  logo: StaticImageData | string;
+  url: string;
+}
+
 const linkedinBaseUrl = "https://www.linkedin.com/in/";
 
-const people: Person[] = [
+// Core Team (Leadership, Finance, Strategy, Marketing)
+export const coreTeam: Person[] = [
   {
     name: "Waverli Leung",
     role: "President",
-    degree: "2nd Yr CS & Maths",
+    degree: "2nd Yr Computer Science & Maths",
     image: president,
     linkedin: `${linkedinBaseUrl}waverli-leung/`,
   },
   {
     name: "Nicole Fernandes",
     role: "Vice President & Inclusion Officer",
-    degree: "3rd Yr CS & Maths",
+    degree: "3rd Yr Computer Science & Maths",
     image: vice,
     linkedin: `${linkedinBaseUrl}nicole-fernandes-uk/`,
   },
   {
     name: "Ben Zan",
     role: "Treasurer & Podcast Host",
-    degree: "2nd Yr CS & Maths",
+    degree: "2nd Yr Computer Science & Maths",
     image: treasurer,
     linkedin: `${linkedinBaseUrl}benjamin-zan/`,
-  },
-  {
-    name: "Sean Lin",
-    role: "Workshops Lead",
-    degree: "2nd Yr CS & Maths",
-    image: workshops1,
-    linkedin: `${linkedinBaseUrl}haol-co/`,
-  },
-  {
-    name: "xxx",
-    role: "Workshops Officer",
-    degree: "xxx",
-    image: workshops2,
-    linkedin: `${linkedinBaseUrl}xxx/`,
-  },
-  {
-    name: "Peter Prescod",
-    role: "Head of Events",
-    degree: "2nd Yr CS & Maths",
-    image: events1,
-    linkedin: `${linkedinBaseUrl}prescod/`,
-  },
-  {
-    name: "xxx",
-    role: "Events Officer",
-    degree: "xxx",
-    image: events2,
-    linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "Darwin Zhu",
@@ -87,34 +68,111 @@ const people: Person[] = [
     image: social,
     linkedin: `${linkedinBaseUrl}yichensusyliu/`,
   },
+];
+
+// Workshop Team
+export const workshopTeam: Person[] = [
   {
-    name: "xxx",
-    role: "Content Creator",
-    degree: "xxx",
-    image: content,
+    name: "Sean Lin",
+    role: "Workshops Lead",
+    degree: "2nd Yr Computer Science & Maths",
+    image: workshops1,
+    linkedin: `${linkedinBaseUrl}haol-co/`,
+  },
+  {
+    name: "Arjun Kukadia",
+    role: "Workshops Officer",
+    degree: "2nd Yr Maths & Physics",
+    image: workshops2,
+    linkedin: `${linkedinBaseUrl}arjun-kukadia-b3548b324/`,
+  },
+  {
+    name: "Leena Dany",
+    role: "Workshops Officer",
+    degree: "1st Yr Computer Science",
+    image: workshops2,
     linkedin: `${linkedinBaseUrl}xxx/`,
+  },
+];
+
+// Events Team
+export const eventsTeam: Person[] = [
+  {
+    name: "Mannat Kinra",
+    role: "Head of Events",
+    degree:
+      "1st Yr MSc International Human Resource Management and Comparative Industrial Relations",
+    image: events1,
+    linkedin: `${linkedinBaseUrl}mannat-kinra/`,
+  },
+  {
+    name: "Shaiem Amin",
+    role: "Events Officer",
+    degree: "2nd Yr Computer Science & Maths",
+    image: events2,
+    linkedin: `${linkedinBaseUrl}shaiem-amin-13329124a/`,
+  },
+  {
+    name: "Weizhou Wang",
+    role: "Events Officer",
+    degree: "2nd Yr Actuarial Science & Maths",
+    image: events2,
+    linkedin: `${linkedinBaseUrl}weizhou-wang/`,
+  },
+];
+
+// Graphics Team
+export const graphicsTeam: Person[] = [
+  {
+    name: "Qistina Shafizul",
+    role: "Graphic Designer",
+    degree: "2nd Yr Computer Science",
+    image: content,
+    linkedin: `${linkedinBaseUrl}qistinashafizul/`,
   },
   {
     name: "Ayesha Khan",
-    role: "Graphic Lead",
-    degree: "2nd Yr Psycology",
-    image: graphic1,
-    linkedin: `${linkedinBaseUrl}xxx/`,
-  },
-  {
-    name: "xxx",
     role: "Graphic Designer",
-    degree: "xxx",
-    image: graphic2,
+    degree: "2nd Yr Psychology", // fixed typo
+    image: graphic1,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
     name: "Taran Patel",
     role: "Video Editor",
-    degree: "3rd Yr CS",
+    degree: "3rd Yr Computer Science",
     image: video,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    linkedin: `${linkedinBaseUrl}tarpat/`,
   },
 ];
 
-export { people as Committee };
+// Sponsors
+export const sponsors: Sponsor[] = [
+  {
+    name: "BNY Mellon",
+    logo: bnyMellonLogo,
+    url: "https://www.bnymellon.com/",
+    tier: "Partner",
+  },
+];
+
+// Grouped + combined exports for convenience
+export const teamsBySection = {
+  "Workshop Team": workshopTeam,
+  "Events Team": eventsTeam,
+  "Graphics Team": graphicsTeam,
+  "Core Team": coreTeam,
+} as const;
+
+export const Committee: Person[] = [
+  ...coreTeam,
+  ...workshopTeam,
+  ...eventsTeam,
+  ...graphicsTeam,
+];
+
+// Optional: site sections object (teams + sponsors)
+export const siteSections = {
+  teams: teamsBySection,
+  sponsors,
+} as const;
