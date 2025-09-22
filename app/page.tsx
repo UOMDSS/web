@@ -1,7 +1,7 @@
 import Footer from "@/components/footer/footer";
 import Hero from "@/components/sections/hero";
 import Navigation from "@/components/navigation/navigation";
-import Sponsor from "@/components/sections/sponsor";
+import Sponsor from "@/components/sections/sponsor"; // ✅ ensure this component has id="sponsors"
 import Events from "@/components/sections/events";
 import Team from "@/components/sections/team";
 import About from "@/components/sections/about";
@@ -15,8 +15,11 @@ export default function Home() {
         <About />
         <Events />
         <Team />
+        {/* 👇 Added the sponsors section after Team */}
+        <Sponsor />
       </main>
       <Footer />
     </div>
   );
 }
+

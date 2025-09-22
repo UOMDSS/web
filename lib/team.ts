@@ -5,14 +5,16 @@ import treasurer from "../public/committee/treasurer.jpg";
 import social from "../public/committee/social.jpg";
 import marketing from "../public/committee/marketing.jpg";
 import graphic1 from "../public/committee/graphic1.jpg";
+import graphic2 from "../public/committee/graphic2.jpg";
 
 import video from "../public/committee/video.jpg";
 import content from "../public/committee/content.jpg";
 import workshops1 from "../public/committee/workshops1.jpg";
 import workshops2 from "../public/committee/workshops2.jpg";
-import events1 from "../public/committee/events.jpg";
+import events1 from "../public/committee/events1.jpg";
 import events2 from "../public/committee/events2.jpg";
-import bnyMellonLogo from "../public/sponsors/bny-mellon.png"; // <-- sponsor logo
+import events3 from "../public/committee/events3.jpg";
+import bnyMellonLogo from "../public/sponsors/bny-logo.svg"; // <-- sponsor logo
 import { StaticImageData } from "next/image";
 
 export interface Person {
@@ -101,7 +103,7 @@ export const eventsTeam: Person[] = [
     name: "Mannat Kinra",
     role: "Head of Events",
     degree:
-      "1st Yr MSc International Human Resource Management and Comparative Industrial Relations",
+      "1st Yr MSc Human Resource Management",
     image: events1,
     linkedin: `${linkedinBaseUrl}mannat-kinra/`,
   },
@@ -116,7 +118,7 @@ export const eventsTeam: Person[] = [
     name: "Weizhou Wang",
     role: "Events Officer",
     degree: "2nd Yr Actuarial Science & Maths",
-    image: events2,
+    image: events3,
     linkedin: `${linkedinBaseUrl}weizhou-wang/`,
   },
 ];
@@ -127,14 +129,14 @@ export const graphicsTeam: Person[] = [
     name: "Qistina Shafizul",
     role: "Graphic Designer",
     degree: "2nd Yr Computer Science",
-    image: content,
+    image: graphic1,
     linkedin: `${linkedinBaseUrl}qistinashafizul/`,
   },
   {
     name: "Ayesha Khan",
     role: "Graphic Designer",
     degree: "2nd Yr Psychology", // fixed typo
-    image: graphic1,
+    image: graphic2,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
   {
@@ -152,7 +154,6 @@ export const sponsors: Sponsor[] = [
     name: "BNY Mellon",
     logo: bnyMellonLogo,
     url: "https://www.bnymellon.com/",
-    tier: "Partner",
   },
 ];
 
