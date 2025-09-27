@@ -60,7 +60,7 @@ export const coreTeam: Person[] = [
   {
     name: "Darwin Zhu",
     role: "Head of Strategy & Risk",
-    degree: "2nd Yr Actuarial Science & Maths",
+    degree: "2nd Yr Maths",
     image: marketing,
     linkedin: `${linkedinBaseUrl}zhecheng-zhu-darwin2006/`,
   },
@@ -116,7 +116,7 @@ export const eventsTeam: Person[] = [
     linkedin: `${linkedinBaseUrl}shaiem-amin-13329124a/`,
   },
   {
-    name: "Weizhou Wang",
+    name: "Jordan Wang",
     role: "Events Officer",
     degree: "2nd Yr Actuarial Science & Maths",
     image: events3,
