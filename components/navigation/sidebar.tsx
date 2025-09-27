@@ -111,7 +111,7 @@ const Sidebar = () => {
                       asChild
                     >
                       <Link
-                        href="https://discord.gg/XFtW8nsRgv"
+                        href="https://discohttps://manchesterstudentsunion.com/activities/view/mudsaird.gg/XFtW8nsRgv"
                         target="_blank"
                         className="text-2xl font-medium cursor-pointer"
                       >
