@@ -49,7 +49,7 @@ const FixedNavbar = () => {
         </ul>
       </nav>
       <Button className="rounded-full px-8" asChild>
-        <Link href="https://discord.gg/XFtW8nsRgv" target="_blank">
+        <Link href="https://manchesterstudentsunion.com/activities/view/mudsai" target="_blank">
           Join Us
         </Link>
       </Button>
@@ -86,7 +86,7 @@ const ScrollNavbar = () => {
           ))}
           <li className="px-2">
             <Button className="rounded-full px-6" asChild>
-              <Link href="https://discord.gg/XFtW8nsRgv" target="_blank">
+              <Link href="https://manchesterstudentsunion.com/activities/view/mudsai" target="_blank">
                 Join Us
               </Link>
             </Button>
