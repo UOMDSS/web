@@ -16,9 +16,9 @@ const Team = () => {
   // Ensure "Core Team" (Leadership Team) is rendered first
   const orderedSections: [string, Person[]][] = [
     ["Core Team", teamsBySection["Core Team"]],
-    ...Object.entries(teamsBySection).filter(
-      ([title]) => title !== "Core Team"
-    ),
+    ...Object.entries(teamsBySection)
+      .filter(([title]) => title !== "Core Team")
+      .map(([title, people]) => [title, people] as [string, Person[]]),
   ];
 
   return (

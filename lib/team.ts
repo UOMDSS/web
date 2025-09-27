@@ -11,6 +11,7 @@ import video from "../public/committee/video.jpg";
 import content from "../public/committee/content.jpg";
 import workshops1 from "../public/committee/workshops1.jpg";
 import workshops2 from "../public/committee/workshops2.jpg";
+import workshops3 from "../public/committee/workshops3.jpg";
 import events1 from "../public/committee/events1.jpg";
 import events2 from "../public/committee/events2.jpg";
 import events3 from "../public/committee/events3.jpg";
@@ -92,7 +93,7 @@ export const workshopTeam: Person[] = [
     name: "Leena Dany",
     role: "Workshops Officer",
     degree: "1st Yr Computer Science",
-    image: workshops2,
+    image: workshops3,
     linkedin: `${linkedinBaseUrl}xxx/`,
   },
 ];
