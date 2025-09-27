@@ -2,7 +2,7 @@ import Image from "next/image";
 import Section from "../section";
 import Link from "next/link";
 import { Linkedin } from "react-bootstrap-icons";
-import { teamsBySection } from "@/lib/team";
+import { teamsBySection, Person } from "@/lib/team";
 
 // Map section titles to nicer labels
 const sectionLabels: Record<string, string> = {
@@ -14,7 +14,7 @@ const sectionLabels: Record<string, string> = {
 
 const Team = () => {
   // Ensure "Core Team" (Leadership Team) is rendered first
-  const orderedSections = [
+  const orderedSections: [string, Person[]][] = [
     ["Core Team", teamsBySection["Core Team"]],
     ...Object.entries(teamsBySection).filter(
       ([title]) => title !== "Core Team"
@@ -38,30 +38,25 @@ const Team = () => {
               role="list"
             >
               {people.map((person, index) => (
-                <li key={index}>
+                <li key={`${sectionTitle}-${person.name}-${index}`}>
                   <div className="flex flex-col items-center">
                     <Image
                       src={person.image}
                       alt={person.name}
-                      style={{
-                        objectFit: "cover",
-                        width: "25vh",
-                        height: "auto",
-                      }}
-                      className="rounded-full aspect-square object-center bg-gray-100"
+                      width={300}
+                      height={300}
+                      className="rounded-full aspect-square object-cover object-center bg-gray-100"
                       priority
                       quality={100}
                     />
                     <p className="mt-2 text-sm md:text-base lg:text-xl font-semibold text-gray-900">
                       {person.name}
                     </p>
-                    <p className="text-xs md:text-sm text-gray-500">
-                      {person.role}
-                    </p>
-                    <p className="text-xs md:text-sm text-gray-400">
-                      {person.degree}
-                    </p>
-                    <Link href={person.linkedin} target="_blank">
+                    <p className="text-xs md:text-sm text-gray-500">{person.role}</p>
+                    {person.degree && (
+                      <p className="text-xs md:text-sm text-gray-400">{person.degree}</p>
+                    )}
+                    <Link href={person.linkedin} target="_blank" rel="noreferrer">
                       <Linkedin className="mt-2 text-gray-500 cursor-pointer hover:text-[#0077B5] transition-colors duration-300 ease-in-out" />
                     </Link>
                   </div>
