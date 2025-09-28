@@ -1,0 +1,20 @@
+[33mab9fd9c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update "Join Us" link in navbar to direct users to the Manchester Students' Union activities page
+[33m6236579[m Fix: Update sidebar link to correct URL for Manchester Students' Union activities
+[33mf3ea428[m Changes join us to su web
+[33m06aeaed[m Update team member details: change Darwin Zhu's degree to "2nd Yr Maths" and rename Weizhou Wang to Jordan Wang while retaining the role of Events Officer.
+[33me4b7a4c[m Refactor team.tsx to ensure proper ordering of team sections and update workshop team member image. Replace workshops2 with workshops3. Remove unused graphic2.jpg and replace with graphic2.png. Add new workshop2.jpg and workshop3.jpg images.
+[33ma50eb0b[m Fix: Resolve TypeScript errors in team.tsx component
+[33mbe78662[m Fix: Update Node.js version to 22.x for Vercel deployment
+[33m841c8b0[m add sponsor section
+[33m2c2f2cc[m updated team members, added sections: core team, event team, workshop team and graphics team, added sponsor: BNY Mellon
+[33m11ef01b[m Update team member images and details, adding new roles and images for Workshops and Events Officers, and introducing new graphic images for enhanced visual representation.
+[33mc53661c[m Update social image in the committee section to enhance visual content.
+[33m7dc8516[m Update team member details by changing the name to Yichen Liu, updating the role to "Digital Marketing Lead," and revising the LinkedIn link and degree information for better clarity.
+[33m8be86ab[m Update role for team member Darwin Zhu from "Marketing & Strategy Lead" to "Head of Strategy & Risk" for improved clarity on responsibilities.
+[33m08fa0a8[m Update team member information by changing the name to Darwin Zhu, updating the LinkedIn link, and adding degree details for enhanced context.
+[33m9f01fd8[m Add degree information for team members in the committee section to provide educational context.
+[33maaf9852[m Update events image in the committee section to improve visual content.
+[33m33735cd[m Update team member details by changing the name to Peter Prescod and updating the LinkedIn link accordingly.
+[33ma6f77aa[m Update team member details for Workshops Lead, including name and LinkedIn link, and replace workshop image with a new version.
+[33m53a64c0[m Update committee images for treasurer and workshops to enhance visual content.
+[33m23c10a8[m Enhance footer with new social media links for TikTok and YouTube, update existing links and styling for consistency, and modify Hero section title to include the username "muds_ai".

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Section from "../section";
 import Link from "next/link";
-import { Linkedin } from "react-bootstrap-icons";
+import { Linkedin, EnvelopeFill } from "react-bootstrap-icons";
 import { teamsBySection, Person } from "@/lib/team";
 
 // Map section titles to nicer labels
@@ -56,9 +56,15 @@ const Team = () => {
                     {person.degree && (
                       <p className="text-xs md:text-sm text-gray-400">{person.degree}</p>
                     )}
-                    <Link href={person.linkedin} target="_blank" rel="noreferrer">
-                      <Linkedin className="mt-2 text-gray-500 cursor-pointer hover:text-[#0077B5] transition-colors duration-300 ease-in-out" />
-                    </Link>
+                    {person.email ? (
+                      <Link href={`mailto:${person.email}`} target="_blank" rel="noreferrer">
+                        <EnvelopeFill className="mt-2 text-gray-500 cursor-pointer hover:text-[#0077B5] transition-colors duration-300 ease-in-out" />
+                      </Link>
+                    ) : person.linkedin ? (
+                      <Link href={person.linkedin} target="_blank" rel="noreferrer">
+                        <Linkedin className="mt-2 text-gray-500 cursor-pointer hover:text-[#0077B5] transition-colors duration-300 ease-in-out" />
+                      </Link>
+                    ) : null}
                   </div>
                 </li>
               ))}

@@ -22,7 +22,8 @@ export interface Person {
   name: string;
   role: string;
   image: StaticImageData | string;
-  linkedin: string;
+  linkedin?: string;
+  email?: string;
   degree: string;
 }
 
@@ -94,7 +95,7 @@ export const workshopTeam: Person[] = [
     role: "Workshops Officer",
     degree: "1st Yr Computer Science",
     image: workshops3,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    linkedin: `${linkedinBaseUrl}leena-abigail-dany-b6b706382/`,
   },
 ];
 
@@ -138,7 +139,7 @@ export const graphicsTeam: Person[] = [
     role: "Graphic Designer",
     degree: "2nd Yr Psychology", // fixed typo
     image: graphic2,
-    linkedin: `${linkedinBaseUrl}xxx/`,
+    email: `ayeshawawaw@gmail.com`,
   },
   {
     name: "Taran Patel",
