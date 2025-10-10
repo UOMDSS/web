@@ -8,7 +8,8 @@ import graphic1 from "../public/committee/graphic1.jpg";
 import graphic2 from "../public/committee/graphic2.jpg";
 
 import video from "../public/committee/video.jpg";
-import content from "../public/committee/content.jpg";
+import content1 from "../public/committee/content1.jpg";
+import content2 from "../public/committee/content2.jpg";
 import workshops1 from "../public/committee/workshops1.jpg";
 import workshops2 from "../public/committee/workshops2.jpg";
 import workshops3 from "../public/committee/workshops3.jpg";
@@ -137,7 +138,7 @@ export const graphicsTeam: Person[] = [
   {
     name: "Ayesha Khan",
     role: "Graphic Designer",
-    degree: "2nd Yr Psychology", // fixed typo
+    degree: "2nd Yr Psychology", 
     image: graphic2,
     email: `ayeshawawaw@gmail.com`,
   },
@@ -147,6 +148,20 @@ export const graphicsTeam: Person[] = [
     degree: "3rd Yr Computer Science",
     image: video,
     linkedin: `${linkedinBaseUrl}tarpat/`,
+  },
+  {
+    name: "Bhanu Bindra",
+    role: "Content Creator",
+    degree: "2nd Yr CS & Maths",
+    image: content1,
+    linkedin: `${linkedinBaseUrl}bhanu-bindra/`,
+  },
+  {
+    name: "Sshubhan Kammari",
+    role: "Content Creator",
+    degree: "2nd Yr Computer Science",
+    image: content2,
+    linkedin: `${linkedinBaseUrl}sshubhan/`,
   },
 ];
 
